@@ -1,11 +1,17 @@
 {
-    "name": "vagabond_react_on_rails",
-    "engines": {
-      "node": "9.9.0"
-    },
-    "scripts": {
-      "build": "cd client && npm install && npm run build && cd ..",
-      "deploy": "cp -a client/build/. public/",
-      "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
-    }
+  "name": "vagabond_react_on_rails",
+  "engines": {
+    "node": "9.9.0"
+  },
+  "scripts": {
+    "build": "cd client && npm install && npm run build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-materialize": "^2.3.3"
   }
+}
