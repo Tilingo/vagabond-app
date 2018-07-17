@@ -1,10 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom"
+import Homepage from './components/Homepage'
+import NavBar from './components/NavBar';
 
 class App extends Component {
   render() {
     return (
       <div>
-        VAGABOND
+        <Router>
+          <div>
+            <NavBar/>
+            <Switch>
+              <Route exact path="/" component={Homepage}/>
+            </Switch>
+          </div>
+        </Router>
       </div>
     );
   }
