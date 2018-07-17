@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Api::SongsControllerTest < ActionDispatch::IntegrationTest
+class Api::PostsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
