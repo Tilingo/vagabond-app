@@ -1,15 +1,22 @@
 import React  from 'react';
 import {Parallax} from 'react-materialize'
+import styled from 'styled-components'
+
+const Section = styled.div`
+    background: #DCA897;
+`
 
 const HomeParallax = () => (
 <div>
   <Parallax imageSrc="http://labor411.org/images/sunset-plane.jpg"/>
-  <div className="section white">
+  <Section className="section">
     <div className="row container">
       <h2 className="header">Parallax</h2>
-      <p className="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+      <p className="grey-text text-darken-3 lighten-3">
+      Some Kinda Sentences about the vagabond app, what we're about, whatever
+      </p>
     </div>
-  </div>
+  </Section>
   <Parallax imageSrc="http://materializecss.com/images/parallax2.jpg"/>
 </div>
 )
