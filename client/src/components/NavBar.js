@@ -31,7 +31,8 @@ class NavBar extends Component {
                     Vagabond
                 </Title>
                 <Navigation>
-                    Links go in here
+                    {/* When logged out, show 'register' and 'sign in'
+                    When logged in, show 'profile' and 'sign out' */}
                 </Navigation>
             </Navbar>
         );
