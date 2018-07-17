@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.2",
-    "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-materialize": "^2.3.3"
   }
