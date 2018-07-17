@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
-import HomeCarousel from './HomeCarousel.js'
+import HomeParallax from './ParallaxHome';
 
 class Homepage extends Component {
     render() {
         return (
             <div>
-                <HomeCarousel />
+                horg
+                <HomeParallax />
             </div>
         );
     }
