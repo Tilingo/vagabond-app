@@ -3,7 +3,7 @@ import {Parallax} from 'react-materialize'
 
 const HomeParallax = () => (
 <div>
-  <Parallax imageSrc="http://materializecss.com/images/parallax1.jpg"/>
+  <Parallax imageSrc="http://labor411.org/images/sunset-plane.jpg"/>
   <div className="section white">
     <div className="row container">
       <h2 className="header">Parallax</h2>
