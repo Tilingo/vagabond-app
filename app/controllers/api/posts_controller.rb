@@ -3,7 +3,7 @@ class Api::PostsController < ApplicationController
 
     
     
-    
+
     def index
         @posts = City.find(params[:city_id]).posts
         render json: @posts
@@ -21,8 +21,9 @@ class Api::PostsController < ApplicationController
     end
 
     def update
-        @post = Post.find(params[:city_id]).posts.update(post_params)
-        render json: @posts
+        @post = Post.find(params[:id])
+        @post.update!(post_params)
+        render json: @post
     end
     
     # def destroy
