@@ -13,11 +13,11 @@ const Navbar = styled.div`
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    font-family: 'Fauna One', serif;
 `
 const Title = styled.div`
     margin: 0 0 0 10px;
     font-size: 24pt;
-    font-weight: 600;
 `
 const Navigation = styled.div`
     margin: 0 10px 0 0;
