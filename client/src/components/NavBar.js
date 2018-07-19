@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Navbar = styled.div`
     background-color: rgba(38, 23, 66, .33);
@@ -14,6 +15,9 @@ const Navbar = styled.div`
     align-items: center;
     position: fixed;
     font-family: 'Fauna One', serif;
+    a {
+        color: #E9D05A;
+    }
 `
 const Title = styled.div`
     margin: 0 0 0 10px;
@@ -35,10 +39,14 @@ class NavBar extends Component {
     render() {
         return (
             <Navbar>
-                <Title>Vagabond</Title>
+                <Title><Link to={`/`}>Vagabond</Link></Title>
                 <Navigation>
-                    <NavigationItem>Sign up</NavigationItem>
-                    <NavigationItem>Log in</NavigationItem>
+                    <NavigationItem>
+                        <Link to={`/users/1`}>Profile</Link>
+                    </NavigationItem>
+                    <NavigationItem>
+                        Sign Out
+                        </NavigationItem>
                 </Navigation>
             </Navbar>
         );

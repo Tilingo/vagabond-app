@@ -7,6 +7,9 @@ const WholeProfile = styled.div`
     display: flex;
     flex-align: row;
 `
+const ProfileBio = styled.div`
+    background: grey;
+`
 
 class Profile extends Component {
     render() {
