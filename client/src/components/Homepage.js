@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import HomeParallax from './ParallaxHome'
-import CityList from './CityList';
+import CityList from './CityList'
 
 class Homepage extends Component {
     render() {
