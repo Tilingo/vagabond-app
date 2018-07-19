@@ -4,9 +4,7 @@ import HomeParallax from './ParallaxHome'
 class Homepage extends Component {
     render() {
         return (
-            <div>
-                <HomeParallax />
-            </div>
+            <HomeParallax />
         );
     }
 }

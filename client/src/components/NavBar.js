@@ -21,7 +21,13 @@ const Title = styled.div`
 `
 const Navigation = styled.div`
     margin: 0 10px 0 0;
-    display: flex-row;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+`
+const NavigationItem = styled.div`
+    margin: 5px;
 `
 
 
@@ -31,10 +37,8 @@ class NavBar extends Component {
             <Navbar>
                 <Title>Vagabond</Title>
                 <Navigation>
-                    <ul>
-                        <li>Sign up</li>
-                        <li>Log in</li>
-                    </ul>
+                    <NavigationItem>Sign up</NavigationItem>
+                    <NavigationItem>Log in</NavigationItem>
                 </Navigation>
             </Navbar>
         );
