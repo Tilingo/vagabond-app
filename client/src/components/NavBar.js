@@ -42,11 +42,12 @@ class NavBar extends Component {
                 <Title><Link to={`/`}>Vagabond</Link></Title>
                 <Navigation>
                     <NavigationItem>
+                        {/* have it link to your specific id. ?? */}
                         <Link to={`/users/1`}>Profile</Link>
                     </NavigationItem>
                     <NavigationItem>
                         Sign Out
-                        </NavigationItem>
+                    </NavigationItem>
                 </Navigation>
             </Navbar>
         );

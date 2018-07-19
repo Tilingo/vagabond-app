@@ -26,21 +26,24 @@ class ProfileSidebar extends Component {
         return (
             <Sidebar>
                 <SidebarContent>
-                    <Image>
-                        <img width="150" height="150" src="http://www.placecage.com/c/100/100" />
-                    </Image>
-                    <About>
-                        <p>
-                            Name
-                        </p>
-                        <p>
-                            Date joined
-                        </p>
-                        <p>
-                            Current city
-                        </p>
-                        {/* If on YOUR profile page, show 'edit' */}
-                </About>
+                    <Link to={`/cities/${this.props.id}`}>
+                        <Image>
+                            <img width="150" height="150" src={this.props.profile_picture} alt={this.props.name} />
+                        </Image>
+                        <About>
+                            <p>
+                            {this.props.name} {this.props.last_name}
+                            </p>
+                            <p>
+                            {/* {this.props.timestamp}
+                            date joined? */}
+                            </p>
+                            <p>
+                            {this.props.current_city}
+                            </p>
+                            {/* If on YOUR profile page, show 'edit' */}
+                        </About>
+                    </Link>
                 </SidebarContent>
             </Sidebar>
         )
