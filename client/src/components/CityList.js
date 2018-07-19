@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import CityCard from './CityCard';
 import axios from 'axios'
+import styled from 'styled-components'
+
+const CityCards = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100vw;
+`
 
 class CityList extends Component {
 
@@ -33,9 +41,9 @@ class CityList extends Component {
         })
 
         return (
-            <div>
+            <CityCards>
                 {cities}
-            </div>
+            </CityCards>
         );
     }
 }
