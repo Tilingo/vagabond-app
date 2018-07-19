@@ -4,9 +4,12 @@ import styled from 'styled-components'
 
 const SingleCard = styled.div`
     width: 25vw;
+    border: 5px solid rgb(38, 23, 66);
+    margin: 0 auto;
     img {
-        max-height: 300px;
-        max-width: 300px;
+        max-height: 20vh;
+        max-width: 20vw;
+        margin: 0 auto;
     }
 `
 
